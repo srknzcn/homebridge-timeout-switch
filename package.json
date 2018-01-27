@@ -1,37 +1,37 @@
 {
-  "name": "homebridge-timeout-cmd",
-  "version": "0.0.1",
-  "description": "Homebridge plugin for timed commands",
-  "license": "ISC",
-  "keywords": [
-    "homebridge-plugin",
-    "homebridge-timeout",
-    "homebridge-delayed"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/srknzcn/homebridge-timeout-cmd.git"
-  },
-  "bugs": {
-    "url": "http://github.com/srknzcn/homebridge-timeout-cmd/issues"
-  },
-  "engines": {
-    "node": ">=0.12.0",
-    "homebridge": ">=0.2.0"
-  },
-  "homepage": "https://github.com/srknzcn/homebridge-timeout-cmd#readme",
-  "scripts": {},
-  "_from": "homebridge-timeout-switch@0.0.1",
-  "_npmVersion": "4.6.1",
-  "_nodeVersion": "8.9.1",
-  "_npmUser": {
-    "name": "srknzcn",
-    "email": "serkanozcan@gmail.com"
-  },
-  "maintainers": [
-    "srknzcn <serkanozcan@gmail.com>"
-  ],
-  "directories": {},
-  "main": "index.js",
-  "author": "srknzcn"
+    "name": "homebridge-timeout-switch",
+    "version": "0.0.1",
+    "description": "Timeout switch plugin for Homebridge",
+    "license": "ISC",
+    "keywords": [
+        "homebridge-plugin",
+        "homebridge-timeout",
+        "homebridge-delayed"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/srknzcn/homebridge-timeout-switch.git"
+    },
+    "bugs": {
+        "url": "http://github.com/srknzcn/homebridge-timeout-switch/issues"
+    },
+    "engines": {
+        "node": ">=0.12.0",
+        "homebridge": ">=0.2.0"
+    },
+    "homepage": "https://github.com/srknzcn/homebridge-timeout-switch#readme",
+    "scripts": {},
+    "_from": "homebridge-timeout-switch@0.0.1",
+    "_npmVersion": "4.6.1",
+    "_nodeVersion": "8.9.1",
+    "_npmUser": {
+        "name": "srknzcn",
+        "email": "serkanozcan@gmail.com"
+    },
+    "maintainers": [
+        "srknzcn <serkanozcan@gmail.com>"
+    ],
+    "directories": {},
+    "main": "index.js",
+    "author": "srknzcn"
 }

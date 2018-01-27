@@ -1,0 +1,113 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
+2 info using npm@2.15.11
+3 info using node@v4.8.7
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/root/homebridge/node_modules/homebridge-timeout-switch',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /root/.npm/homebridge-timeout-switch/0.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+10 verbose tar pack [ '/root/.npm/homebridge-timeout-switch/0.0.1/package.tgz',
+10 verbose tar pack   '/root/homebridge/node_modules/homebridge-timeout-switch' ]
+11 verbose tarball /root/.npm/homebridge-timeout-switch/0.0.1/package.tgz
+12 verbose folder /root/homebridge/node_modules/homebridge-timeout-switch
+13 info prepublish homebridge-timeout-switch@0.0.1
+14 verbose addLocalTarball adding from inside cache /root/.npm/homebridge-timeout-switch/0.0.1/package.tgz
+15 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+16 silly cache afterAdd homebridge-timeout-switch@0.0.1
+17 verbose afterAdd /root/.npm/homebridge-timeout-switch/0.0.1/package/package.json not in flight; writing
+18 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+19 verbose afterAdd /root/.npm/homebridge-timeout-switch/0.0.1/package/package.json written
+20 silly publish { name: 'homebridge-timeout-switch',
+20 silly publish   version: '0.0.1',
+20 silly publish   description: 'Timeout switch plugin for Homebridge',
+20 silly publish   license: 'ISC',
+20 silly publish   keywords:
+20 silly publish    [ 'homebridge-plugin',
+20 silly publish      'homebridge-timeout',
+20 silly publish      'homebridge-delayed' ],
+20 silly publish   repository:
+20 silly publish    { type: 'git',
+20 silly publish      url: 'git://github.com/srknzcn/homebridge-timeout-switch.git' },
+20 silly publish   bugs: { url: 'http://github.com/srknzcn/homebridge-timeout-switch/issues' },
+20 silly publish   engines: { node: '>=0.12.0', homebridge: '>=0.2.0' },
+20 silly publish   homepage: 'https://github.com/srknzcn/homebridge-timeout-switch#readme',
+20 silly publish   scripts: {},
+20 silly publish   _from: '.',
+20 silly publish   _npmVersion: '4.6.1',
+20 silly publish   _nodeVersion: '8.9.1',
+20 silly publish   _npmUser: { name: 'srknzcn', email: 'serkanozcan@gmail.com' },
+20 silly publish   maintainers: [ { name: 'srknzcn', email: 'serkanozcan@gmail.com' } ],
+20 silly publish   directories: {},
+20 silly publish   main: 'index.js',
+20 silly publish   author: { name: 'srknzcn' },
+20 silly publish   readme: '# homebridge-timeout-switch\n',
+20 silly publish   readmeFilename: 'README.md',
+20 silly publish   gitHead: 'b075f2787a9fa219033e8dd12a9042d68da1ce20',
+20 silly publish   _id: 'homebridge-timeout-switch@0.0.1',
+20 silly publish   _shasum: '0ec6ce077284a463b152a83ae94bdf8014db13fb' }
+21 verbose getPublishConfig undefined
+22 silly mapToRegistry name homebridge-timeout-switch
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry data Result {
+25 silly mapToRegistry   raw: 'homebridge-timeout-switch',
+25 silly mapToRegistry   scope: null,
+25 silly mapToRegistry   name: 'homebridge-timeout-switch',
+25 silly mapToRegistry   rawSpec: '',
+25 silly mapToRegistry   spec: 'latest',
+25 silly mapToRegistry   type: 'tag' }
+26 silly mapToRegistry uri https://registry.npmjs.org/homebridge-timeout-switch
+27 verbose publish registryBase https://registry.npmjs.org/
+28 silly publish uploading /root/.npm/homebridge-timeout-switch/0.0.1/package.tgz
+29 verbose request uri https://registry.npmjs.org/homebridge-timeout-switch
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 12:06:10 AM
+32 verbose request using bearer token for auth
+33 verbose request id b33ed9c0304fd1eb
+34 http request PUT https://registry.npmjs.org/homebridge-timeout-switch
+35 http 403 https://registry.npmjs.org/homebridge-timeout-switch
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'content-length': '91',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Sat, 27 Jan 2018 21:06:12 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-hhn1551-HHN',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1517087171.961644,VS0,VE1336',
+36 verbose headers   vary: 'Accept-Encoding, Accept' }
+37 verbose request invalidating /root/.npm/registry.npmjs.org/homebridge-timeout-switch on PUT
+38 error publish Failed PUT 403
+39 verbose stack Error: You cannot publish over the previously published version 0.0.1. : homebridge-timeout-switch
+39 verbose stack     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+39 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+39 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:187:22)
+39 verbose stack     at emitTwo (events.js:87:13)
+39 verbose stack     at Request.emit (events.js:172:7)
+39 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+39 verbose stack     at emitOne (events.js:77:13)
+39 verbose stack     at Request.emit (events.js:169:7)
+39 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:965:12)
+40 verbose statusCode 403
+41 verbose pkgid homebridge-timeout-switch
+42 verbose cwd /root/homebridge/node_modules/homebridge-timeout-switch
+43 error Linux 4.9.77-v7+
+44 error argv "/usr/bin/node" "/usr/bin/npm" "publish"
+45 error node v4.8.7
+46 error npm  v2.15.11
+47 error code E403
+48 error You cannot publish over the previously published version 0.0.1. : homebridge-timeout-switch
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]

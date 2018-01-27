@@ -30,18 +30,26 @@ TimeoutSwitch.prototype.cmd = function(cmd, callback) {
         if (error) {
             this.log(stderr);
         }
-        callback();
+        if (callback) {
+            callback();
+        }
     });
 };
 
 TimeoutSwitch.prototype.setState = function(on, callback) {
+    var self = this;
+
     if (on == 1) {
         this.log('Accessory state is "on"');
-        clearTimeout(this.timer);
+        clearTimeout(self.timer);
         
         // execute command from config for on state
         this.cmd(this.config.cmd.on, function(error, stdout, stderr) {
             callback();
+
+            if (self.config.event.on) {
+                self.cmd(self.config.event.on);
+            }
         });
 
         // create timer
@@ -57,6 +65,11 @@ TimeoutSwitch.prototype.setState = function(on, callback) {
         // execute command from config for off state
         this.cmd(this.config.cmd.off, function(error, stdout, stderr) {
             callback();
+
+            if (self.config.event.off) {
+                self.cmd(self.config.event.off);
+            }
         });
     }
 }
+

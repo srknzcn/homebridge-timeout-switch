@@ -21,7 +21,6 @@
     },
     "homepage": "https://github.com/srknzcn/homebridge-timeout-switch#readme",
     "scripts": {},
-    "_from": "homebridge-timeout-switch@0.0.1",
     "_npmVersion": "4.6.1",
     "_nodeVersion": "8.9.1",
     "_npmUser": {
